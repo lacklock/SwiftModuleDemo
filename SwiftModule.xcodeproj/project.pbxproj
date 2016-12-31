@@ -21,6 +21,9 @@
 		3A065A071E17A4DB00C00D1F /* BusinessA.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A065A051E17A4DB00C00D1F /* BusinessA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A065A0A1E17A4DB00C00D1F /* BusinessA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A065A031E17A4DB00C00D1F /* BusinessA.framework */; };
 		3A065A0B1E17A4DB00C00D1F /* BusinessA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A065A031E17A4DB00C00D1F /* BusinessA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A065A101E17A63C00C00D1F /* BBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A065A0F1E17A63C00C00D1F /* BBViewController.swift */; };
+		3A065A131E17A66A00C00D1F /* BAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A065A111E17A66A00C00D1F /* BAViewController.swift */; };
+		3A065A141E17A66A00C00D1F /* BAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A065A121E17A66A00C00D1F /* BAViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		3A065A031E17A4DB00C00D1F /* BusinessA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusinessA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A065A051E17A4DB00C00D1F /* BusinessA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessA.h; sourceTree = "<group>"; };
 		3A065A061E17A4DB00C00D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A065A0F1E17A63C00C00D1F /* BBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBViewController.swift; sourceTree = "<group>"; };
+		3A065A111E17A66A00C00D1F /* BAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAViewController.swift; sourceTree = "<group>"; };
+		3A065A121E17A66A00C00D1F /* BAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAViewController.xib; sourceTree = "<group>"; };
 		63533D4A6D269B7DFCCB7E3D /* Pods_BusinessA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C74E3E7F77A63DA54129A8 /* Pods-BusinessB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessB.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessB/Pods-BusinessB.release.xcconfig"; sourceTree = "<group>"; };
 		A958B2E13A92E160A67030EF /* Pods-BusinessA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessA.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessA/Pods-BusinessA.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			children = (
 				3A0659F41E17A4CB00C00D1F /* BusinessB.h */,
 				3A0659F51E17A4CB00C00D1F /* Info.plist */,
+				3A065A0F1E17A63C00C00D1F /* BBViewController.swift */,
 			);
 			path = BusinessB;
 			sourceTree = "<group>";
@@ -159,6 +166,8 @@
 			children = (
 				3A065A051E17A4DB00C00D1F /* BusinessA.h */,
 				3A065A061E17A4DB00C00D1F /* Info.plist */,
+				3A065A111E17A66A00C00D1F /* BAViewController.swift */,
+				3A065A121E17A66A00C00D1F /* BAViewController.xib */,
 			);
 			path = BusinessA;
 			sourceTree = "<group>";
@@ -289,11 +298,13 @@
 					3A0659F11E17A4CB00C00D1F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DX3SJ54BCR;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					3A065A021E17A4DB00C00D1F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DX3SJ54BCR;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -340,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A065A141E17A66A00C00D1F /* BAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A065A101E17A63C00C00D1F /* BBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A065A131E17A66A00C00D1F /* BAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B8EABE8B7EA200E889462BA /* Pods-SwiftModule.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DX3SJ54BCR;
 				INFOPLIST_FILE = SwiftModule/Info.plist;
@@ -622,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36B6E7DBD9794ED9F0E259A1 /* Pods-SwiftModule.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DX3SJ54BCR;
 				INFOPLIST_FILE = SwiftModule/Info.plist;
@@ -637,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAD841AB673CB324F6A6FB0C /* Pods-BusinessB.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -650,6 +667,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lacklock.BusinessB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -661,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66C74E3E7F77A63DA54129A8 /* Pods-BusinessB.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -685,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05718E4E10E954996F140D55 /* Pods-BusinessA.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -698,6 +718,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lacklock.BusinessA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -709,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A958B2E13A92E160A67030EF /* Pods-BusinessA.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -757,6 +779,7 @@
 				3A0659FD1E17A4CB00C00D1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A065A0C1E17A4DC00C00D1F /* Build configuration list for PBXNativeTarget "BusinessA" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +788,7 @@
 				3A065A0E1E17A4DC00C00D1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
